@@ -1,4 +1,34 @@
-body {
-  color: black;
+/*********************************************************************************/
+
+/* Questions-summary-page                                                                   */
+
+/*********************************************************************************/
+
+.pagination {
+  border-top: 1px solid lightgrey;
+  margin: 0, 20px, 20px, 20px;
+  padding: 15px;
+}
+
+.question-summary {
+  border: 1px solid lightgrey;
+  border-bottom: none;
+  margin: 20px, 20px, 0, 20px;
+  padding: 15px;
+}
+
+.excerpt {
+  padding: 20px;
+}
+
+.author {
+  width: 300px;
+}
+
+#banner h2,
+#banner p,
+#banner a,
+#banner strong {
+  color: black !important;
 }
 

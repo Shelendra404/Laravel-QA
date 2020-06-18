@@ -4,20 +4,19 @@
 <div id="header-featured">
     <div id="banner-wrapper">
         <div id="banner" class="container">
-            <h2>Maecenas luctus lectus</h2>
+            <h2>Standard Q/A forum platform | Laravel</h2>
             <p>
-                This is <strong>SimpleWork</strong>, a free, fully
-                standards-compliant CSS template designed by
-                <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The
-                photos in this template are from
-                <a href="http://fotogrph.com/"> Fotogrph</a>. This free template
-                is released under the
-                <a href="http://templated.co/license">Creative Commons Attribution</a>
-                license, so you're pretty much free to do whatever you want with
-                it (even use it commercially) provided you give us credit for it.
-                Have fun :)
+                This project has been used to practise Laravel from scratch.
+                The results are based on an earlier similar project made with ReactJS,
+                a group assignment from a FullStackDeveloper course I participated in
+                earlier this year.
             </p>
-            <a href="#" class="button">Etiam posuere</a>
+            <p>
+                Feel free to check out <a href="https://github.com/Shelendra404"><strong>my GitHub pages</strong></a> to
+                keep up with my progress!
+
+            </p>
+            <a href="/questions" class="button">Onwards to the forum</a>
         </div>
     </div>
 </div>

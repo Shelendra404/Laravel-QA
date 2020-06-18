@@ -51,7 +51,8 @@ a:hover {
 
 .container {
     margin: 0px auto;
-    width: 1200px;
+    padding: 0 20px;
+    max-width: 1200px;
 }
 
 /*********************************************************************************/
@@ -320,13 +321,23 @@ ul.contact li a.icon-rss:before {
 /*********************************************************************************/
 
 #header-wrapper {
-    background: #2b2b2b url(../images/banner.jpg) no-repeat center;
-    background-size: auto 100%;
+    /* background: #2b2b2b url(../images/banner.jpg) no-repeat center;
+    background-size: 100% auto;
+    background-position: center; */
+}
+
+#header-featured {
+    width: 100%;
+    background: #2b2b2b url(../images/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 500px;
+    top: 150px;
 }
 
 #header {
     position: relative;
-    height: 150px;
+    height: 195px;
 }
 
 /*********************************************************************************/
@@ -421,7 +432,7 @@ ul.contact li a.icon-rss:before {
 /*********************************************************************************/
 
 #header-featured {
-    padding: 10em 0em;
+    padding: 5em 0em;
 }
 
 #banner-wrapper {
@@ -429,7 +440,7 @@ ul.contact li a.icon-rss:before {
 
 #banner {
     overflow: hidden;
-    width: 1000px;
+    max-width: 1000px;
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
     font-size: 1.5em;
@@ -442,7 +453,7 @@ ul.contact li a.icon-rss:before {
 #banner h2 {
     padding-bottom: 0.5em;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2.2em;
     color: #fff;
 }
 
@@ -473,7 +484,7 @@ ul.contact li a.icon-rss:before {
 
 #page {
     overflow: hidden;
-    padding: 6em 0em 6em 0em;
+    padding: 6em 2em 6em 2em;
     background: #fff;
 }
 
@@ -487,7 +498,7 @@ ul.contact li a.icon-rss:before {
 
 #content {
     float: left;
-    width: 700px;
+    width: 100%;
 }
 
 /*********************************************************************************/
