@@ -17,18 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/about', function () {
-    return view('about', [
-        'questions' => App\Question::latest()->take(3)->get(),
-    ]);
-});
+// Route::get('/about', function () {
+//     return view('about', [
+//         'questions' => App\Question::latest()->take(3)->get(),
+//     ]);
+// });
+
+Route::get('/questions', 'QuestionsController@index');
 
 Route::get('/questions/{question}', 'QuestionsController@show');
 
-Route::get('/questions', 'QuestionsController@index');
-// Route::get('/', function () {
-//     $name = request('name');
-//     return view('user', ['name' => $name]);
-// });
-
-Route::get('/users/{user}', 'UsersController@show');
+//Route::get('/users/{user}', 'UsersController@show');
