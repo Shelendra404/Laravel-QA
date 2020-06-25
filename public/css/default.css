@@ -347,7 +347,7 @@ ul.contact li a.icon-rss:before {
 #logo {
     position: absolute;
     top: 6em;
-    width: 100%;
+    width: auto;
 }
 
 #logo h1 {
