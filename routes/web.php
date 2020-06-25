@@ -23,8 +23,10 @@ Route::get('/', function () {
 //     ]);
 // });
 
-Route::get('/questions', 'QuestionsController@index');
-
-Route::get('/questions/{question}', 'QuestionsController@show');
-
+Route::get('/questions', 'QuestionsController@index')->name('questions.index');
+Route::post('/questions', 'QuestionsController@store');
+Route::get('/questions/create', 'QuestionsController@create');
+Route::get('/questions/{question}', 'QuestionsController@show')->name('questions.show');
+Route::get('/questions/{question}/edit', 'QuestionsController@edit');
+Route::put('/questions/{question}', 'QuestionsController@update');
 //Route::get('/users/{user}', 'UsersController@show');
