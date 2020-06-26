@@ -30,17 +30,28 @@ Released   : 20140225
         <div id="header" class="container">
             <div id="logo">
                 <h1><a href="/">Laravel*Overflow</a></h1>
+
             </div>
             <div id="menu">
                 <ul>
                     <li class="{{ Request::path() === "/" ? "current_page_item" : "" }}"><a href="/" accesskey="1"
                             title="">Homepage</a></li>
                     <li class="{{ Request::path() === "questions" ? "current_page_item" : "" }}"><a href="/questions"
-                            accesskey="4" title="">Questions</a></li>
-                    <li class="{{ Request::path() === "contact" ? "current_page_item" : "" }}"><a href="/" accesskey="5"
+                            accesskey="2" title="">Questions</a></li>
+                    <li class="{{ Request::path() === "contact" ? "current_page_item" : "" }}"><a href="/" accesskey="3"
                             title="">Contact Me</a></li>
-                    <li class="{{ Request::path() === "login" ? "current_page_item" : "" }}"><a href="/" accesskey="6"
-                            title="">Log in</a></li>
+                    @guest
+
+                    <li class="{{ Request::path() === "login" ? "current_page_item" : "" }}"><a href="/login"
+                            accesskey="4" title="">Log in</a></li>
+                    <li class="{{ Request::path() === "register" ? "current_page_item" : "" }}"><a href="/register"
+                            accesskey="5" title="">Register</a></li>
+                    @else
+                    <li class="{{ Request::path() === "profile" ? "current_page_item" : "" }}"><a href="/profile"
+                            accesskey="6" title="">Profile</a></li>
+                    <li class="{{ Request::path() === "logout" ? "current_page_item" : "" }}"><a href="/logout"
+                            accesskey="7" title="">Log out</a></li>
+                    @endguest
                 </ul>
             </div>
         </div>

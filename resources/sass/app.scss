@@ -1,34 +1,67 @@
-$primary: black;
-$border-color: lightgrey;
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
 
 /*********************************************************************************/
+
 /* Questions-summary-page                                                                   */
+
 /*********************************************************************************/
 
 .pagination {
-    border-top: 1px solid $border-color;
-    margin: 0, 20px, 20px, 20px;
-    padding: 15px;
+  border-top: 1px solid lightgrey;
+  margin: 0, 20px, 20px, 20px;
+  padding: 15px;
 }
 
 .question-summary {
-    border: 1px solid $border-color;
-    border-bottom: none;
-    margin: 20px, 20px, 0, 20px;
-    padding: 15px;
+  border: 1px solid lightgrey;
+  border-bottom: none;
+  margin: 20px, 20px, 0, 20px;
+  padding: 15px;
 }
 
 .excerpt {
-    padding: 20px;
+  padding: 20px;
 }
 
 .author {
-    width: 300px;
+  width: 300px;
 }
 
-#banner h2,
-#banner p,
-#banner a,
-#banner strong {
+/*********************************************************************************/
+
+/* Front Page                                                                  */
+
+/*********************************************************************************/
+
+#banner-wrapper {
+  #banner h2,
+  #banner p,
+  #banner a,
+  #banner strong {
     color: black !important;
+  }
+}
+
+/*********************************************************************************/
+
+/* Content                                                                       */
+
+/*********************************************************************************/
+
+#wrapper {
+  padding: 20px;
+  min-height: 510px;
+}
+
+@media (max-width: 1199px) {
+  #logo h1 {
+    display: none;
+  }
 }

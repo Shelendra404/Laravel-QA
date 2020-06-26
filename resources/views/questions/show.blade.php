@@ -7,7 +7,13 @@
             <div class="title">
                 <h2> {{ $question->title }}</h2>
             </div>
-            {{ $question->body }}
+            {!! $question->body !!}
+
+            <p>
+                @foreach ($question->tags as $tag)
+                <a href="{{ route('questions.index', ['tag' => $tag->name]) }}">{{ $tag->name }}</a>
+                @endforeach
+            </p>
         </div>
 
     </div>
